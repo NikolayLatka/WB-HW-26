@@ -410,7 +410,7 @@
     <footer class="footer">
       <div class="container footer-flex">
         <h2 class="visually-hidden"></h2>
-       <address>
+       <address class="footer-logo-address">
         <a class="footer-logo" href="./index.html"
           ><p lang="en">
             <span class="logo-start">Web</span
@@ -418,7 +418,7 @@
           </p></a
         >
        </address>
-       <address>
+       <address class="footer-list-address">
         <ul class="footer-list">
           <li class="footer-item">
             <p class="footer-addres">м. Київ, пр-т Лесі Українки, 26</p>
@@ -511,9 +511,6 @@
         <span class="modal-span">
           Ім'я
         </span>
-        <svg class="modal-svg" width="12px" height="12px">
-          <use class="modal-use" href="./img/sprite.svg#human"></use>
-        </svg>
         <input 
         class="modal-input modal-input-name"
         type="text" 
@@ -522,14 +519,14 @@
         maxlength="20" 
         pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
         title="Користувач повинен мати ім'я, прізвище розділене пробілом та написане англійською мовою">
+        <svg class="modal-svg" width="12px" height="12px">
+          <use class="modal-use" href="./img/sprite.svg#human"></use>
+        </svg>
       </label>
       <label class="modal-label">
         <span class="modal-span">
           Телефон
         </span>
-        <svg class="modal-svg" width="13px" height="13px">
-          <use class="modal-use" href="./img/sprite.svg#phone"></use>
-        </svg>
         <input 
         class="modal-input modal-input-phone" 
         type="tel" 
@@ -537,14 +534,14 @@
         minlength="13"
         maxlength="13"
         title="Номер телефону введений некоректно! Приклад:+380000000000">
+        <svg class="modal-svg" width="13px" height="13px">
+          <use class="modal-use" href="./img/sprite.svg#phone"></use>
+        </svg>
       </label>
       <label class="modal-label">
         <span class="modal-span">
           Пошта
         </span>
-        <svg class="modal-svg" width="15px" height="12px"> 
-          <use class="modal-use" href="./img/sprite.svg#mail"></use>
-        </svg>
         <input 
         class="modal-input modal-input-mail" 
         type="email" 
@@ -552,13 +549,17 @@
         minlength="4" 
         maxlength="10"
         title="Адрес електронної почти введений некоректно! Приклад:example@mail.com">
+        <svg class="modal-svg" width="15px" height="12px"> 
+          <use class="modal-use" href="./img/sprite.svg#mail"></use>
+        </svg>
       </label>
       <label class="modal-label modal-label-comment">
         <span class="modal-span">
           Коментар
         </span>
         <input 
-        class="modal-input modal-input-comment" 
+        class="modal-input-comment" 
+        id="comment"
         type="text" 
         maxlength="500"
         placeholder="Введіть текст">
@@ -566,6 +567,7 @@
       <label class="modal-label-checkbox">
         <input 
         class="modal-input-checkbox" 
+        id="checkbox"
         type="checkbox" 
         required>
         <span class="modal-span">Погоджуюся з розсилкою та приймаю <a class="modal-span-link" href="#">Умови договору</a></span>
