@@ -50,6 +50,7 @@ body {
   font-size: 26px;
   font-weight: 700;
   line-height: (calc(31 / 26));
+  letter-spacing: 3%;
 }
 
 .logo-start {
@@ -684,11 +685,18 @@ text-align: center;
 
 .footer-flex {
   position: relative;
+  display: flex;
+
   height: 100%;
 }
 
-.footer-logo-address {
+.footer-address {
   padding-top: 60px;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer-list {
@@ -710,10 +718,11 @@ text-align: center;
 }
 
 .footer-social-wrapp {
-  margin-left: 327px;
-  margin-top: -190px;
+  margin-left: 70px;
+  margin-top: 72px;
 
   width: 206px;
+  height: 80px;
 }
 
 .footer-social-media-name {
@@ -723,14 +732,12 @@ font-size: 14px;
 font-weight: 700;
 line-height: calc(16 / 14);
 
-width: 116px;
+margin-bottom: 20px;
 }
 
 .footer-social-media-list {
   display: flex;
   gap: 10px;
-
-  margin-top: 20px;
 }
 
 .footer-social-media-item {
@@ -745,8 +752,8 @@ width: 116px;
 width: 574px;
 height: 86px;
 
-margin-left: 627px;
-margin-top: -72px;
+margin-left: 93px;
+margin-top: 72px;
 }
 
 .subscribe-text {
@@ -775,8 +782,6 @@ padding-left: 16px;
 }
 
 .subscribe-btn {
-  position: relative;
-  top: 1.5px;
 
 width: 200px;
 height: 50px;

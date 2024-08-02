@@ -116,18 +116,88 @@
     </main>
     <footer class="footer">
       <div class="container footer-flex">
-      <a class="footer-logo" href="./index.html"><p lang="en"><span class="logo-start">Web</span><span class="footer-logo-end">Studio</span></p></a>
-      <ul class="footer-list">
-        <li class="footer-item">
-          <p class="footer-addres">м. Київ, пр-т Лесі Українки, 26</p>
-        </li>
-        <li class="footer-item">
-          <a class="footer-contact" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        </li>
-        <li class="footer-item">
-          <a class="footer-contact" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+        <h2 class="visually-hidden"></h2>
+       <address class="footer-address">
+        <a class="footer-logo" href="./index.html"
+          ><p lang="en">
+            <span class="logo-start">Web</span
+            ><span class="footer-logo-end">Studio</span>
+          </p></a
+        >
+        <ul class="footer-list">
+          <li class="footer-item">
+            <p class="footer-addres">м. Київ, пр-т Лесі Українки, 26</p>
+          </li>
+          <li class="footer-item">
+            <a class="footer-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="footer-item">
+            <a class="footer-contact" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+       </address>
+       <div class="footer-social-wrapp">
+        <h3 class="footer-social-media-name">
+          ПРИЄДНУЙТЕСЬ
+        </h3>
+        <ul class="footer-social-media-list">
+          <li class="footer-social-media-item">
+            <a class="footer-social-media-link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-media-svg">
+                  <use href="./img/sprite.svg#instagram" class="footer-social-media-link"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-item">
+            <a class="footer-social-media-link" href="https://x.com/?lang=ru" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-media-svg">
+                <use href="./img/sprite.svg#twitter" class="footer-social-media-use"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-item">
+            <a class="footer-social-media-link" href="https://uk-ua.facebook.com" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-media-svg">
+                <use href="./img/sprite.svg#facebook" class="footer-social-media-use"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-media-item">
+            <a class="footer-social-media-link" href="https://ua.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <svg class="footer-social-media-svg">
+                  <use href="./img/sprite.svg#linkedin" class="footer-social-media-use"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+       </div>
+       <div class="subscribe">
+        <h3 class="subscribe-text">
+          ПІДПИШІТЬСЯ НА РОЗСИЛКУ
+        </h3>
+        <form class="subscribe-form">
+          <label class="subscribe-label">
+            <input 
+              class="subscribe-input" 
+              type="email" 
+              placeholder="E-mail"
+              required 
+              minlength="4" 
+              maxlength="10"
+              title="Адрес електронної почти введений некоректно! Приклад:example@mail.com">
+          </label>
+          <button class="subscribe-btn">
+            Підписатися
+          </button>
+          <svg class="subscribe-svg">
+            <use class="subscribe-use" href="./img/sprite.svg#paper-plane"></use>
+          </svg>
+        </form>
+       </div>
       </div>
     </footer>
   </body>
